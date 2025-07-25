@@ -1,0 +1,17 @@
+<app-loader></app-loader>
+<mat-tab-group class="tab-group" style="margin:50px; box-shadow: 0 4px 12px black;" (selectedTabChange)="onTabChange($event)">
+  <mat-tab label="Resultado actual">
+    <mat-card class="tab-content">
+      <ng-container *ngIf="loadCurrentResult">
+        <app-home></app-home>
+      </ng-container>
+    </mat-card>
+  </mat-tab>
+  <mat-tab label="Historial de búsquedas">
+    <mat-card class="tab-content">
+      <ng-container *ngIf="loadHistory">
+        <app-history></app-history>
+      </ng-container>
+    </mat-card>
+  </mat-tab>
+</mat-tab-group>

@@ -1,0 +1,6 @@
+@GodoyTest_HostAddress = http://localhost:5264
+
+GET {{GodoyTest_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

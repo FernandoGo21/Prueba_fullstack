@@ -1,0 +1,33 @@
+.container {
+  display: flex; justify-content: center; flex-direction: column; align-items: center; width:99%; height:80vh;
+}
+
+.gif-container img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.text-container {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.fact-text {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.center_component{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.max_dimensions{
+  max-width: 60%;
+}

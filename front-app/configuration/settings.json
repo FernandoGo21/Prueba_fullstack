@@ -1,0 +1,14 @@
+{
+    "General": {
+      "Ip": "",
+      "Port": "4200"
+    },
+
+    "APIS": {
+      "ApiBase":"https://localhost:7065/",
+      "ApiFact": "api/fact",
+      "ApiGif": "api/gif",
+      "ApiOtherGif": "api/otherGif",
+      "ApiHistory": "api/history"
+    }
+  }

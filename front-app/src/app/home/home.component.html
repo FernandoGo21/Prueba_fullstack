@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="gif-container center_component">
+    <img class="max_dimensions" [src]="gifUrl" *ngIf="gifUrl" alt="Cat GIF"/>
+  </div>
+  <div class="query center_component" >
+    <p><strong>Palabras usadas como query: </strong>{{ query }}</p>
+  </div>
+  <div class="fact center_component">
+    <p style="max-width:70%;"><strong>Texto aleatorio: </strong>{{ fact }}</p>
+  </div>
+  <button class="center_component" mat-raised-button color="primary" (click)="refreshGif()">Refrescar GIF</button>
+</div>
