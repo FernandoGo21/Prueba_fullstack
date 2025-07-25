@@ -3,9 +3,9 @@
 Este proyecto es una aplicación web que consume datos de dos APIs públicas (**Cat Facts** y **Giphy**) a través de un backend en **.NET 8**, mostrando resultados en una interfaz desarrollada con **Angular**.
 
 ## 📌 Estructura del repositorio
-/GodoyTest/ <-- Proyecto principal ASP.NET Core (contiene frontend embebido en wwwroot)
-/front-app/ <-- Código fuente del frontend Angular
-README.md <-- Este archivo
+- /GodoyTest/ <-- Proyecto principal ASP.NET Core (contiene frontend embebido en wwwroot)
+- /front-app/ <-- Código fuente del frontend Angular
+- README.md <-- Este archivo
 
 ## 🧠 Descripción funcional
 
