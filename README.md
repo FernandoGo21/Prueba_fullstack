@@ -44,8 +44,8 @@ README.md <-- Este archivo
 
 1.  Clona el repositorio
 ```bash
-    git clone https://github.com/FernandoGo21/progressa_test.git
-    cd .\progressa_test\
+    git clone https://github.com/FernandoGo21/Prueba_fullstack.git
+    cd GodoyTest
 ```
 2.  Crea una base de datos llamada `GodoyTestDb`:
 ```sql
@@ -57,17 +57,15 @@ README.md <-- Este archivo
         "DefaultConnection": "Server=localhost;Database=GodoyTestDb;User Id=sa;Password=YourStrong!Passw0rd;"
     }
 ```
-4.  Ejecuta las migraciones de Entity Framework para crear automáticamente la base de datos y sus tablas
+4.  Ejecuta las migraciones de Entity Framework para crear automáticamente sus tablas
 ```bash
-    cd GodoyTest
+    dotnet ef database update
 ```
 -   Nota: Si no tienes instalado dotnet-ef, puedes agregarlo con:
 ```bash
     dotnet tool install --global dotnet-ef
 ```
-```bash
-    dotnet ef database update
-```
+
 3. Ejecuta la aplicación
 ```bash
     dotnet run
