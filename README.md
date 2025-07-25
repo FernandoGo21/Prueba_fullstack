@@ -48,11 +48,11 @@ git clone https://github.com/FernandoGo21/Prueba_fullstack.git
 cd Prueba_fullstack
 cd GodoyTest
 ```
-2.  Crea una base de datos llamada `GodoyTestDb`:
+2.  Crea una base de datos en SQL Server que se llame `GodoyTestDb`:
 ```sql
-    CREATE DATABASE GodoyTestDb;
+CREATE DATABASE GodoyTestDb;
 ```
-3.  Abre el archivo appsettings.json y ajusta la cadena de conexión
+3.  Abre el archivo appsettings.json y ajusta la cadena de conexión segun donde hayas creado la base de datos y segun tus datos de usuario
 ```c#
 "ConnectionStrings": {
     "DefaultConnection": "Server=localhost;Database=GodoyTestDb;User Id=sa;Password=YourStrong!Passw0rd;"
