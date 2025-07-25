@@ -44,8 +44,9 @@ Este proyecto es una aplicación web que consume datos de dos APIs públicas (**
 
 1.  Clona el repositorio
 ```bash
-    git clone https://github.com/FernandoGo21/Prueba_fullstack.git
-    cd GodoyTest
+git clone https://github.com/FernandoGo21/Prueba_fullstack.git
+cd Prueba_fullstack
+cd GodoyTest
 ```
 2.  Crea una base de datos llamada `GodoyTestDb`:
 ```sql
@@ -53,26 +54,25 @@ Este proyecto es una aplicación web que consume datos de dos APIs públicas (**
 ```
 3.  Abre el archivo appsettings.json y ajusta la cadena de conexión
 ```c#
-    "ConnectionStrings": {
-        "DefaultConnection": "Server=localhost;Database=GodoyTestDb;User Id=sa;Password=YourStrong!Passw0rd;"
-    }
+"ConnectionStrings": {
+    "DefaultConnection": "Server=localhost;Database=GodoyTestDb;User Id=sa;Password=YourStrong!Passw0rd;"
+}
 ```
-4.  Ejecuta las migraciones de Entity Framework para crear automáticamente sus tablas
+4.  Ejecuta las migraciones de Entity Framework para crear automáticamente sus tablas, para este caso usaremos los comandos de dotnet-ef Nota: Si no tienes instalado dotnet-ef, puedes agregarlo con:
 ```bash
-    dotnet ef database update
+dotnet tool install --global dotnet-ef
 ```
--   Nota: Si no tienes instalado dotnet-ef, puedes agregarlo con:
+5. Despues de que tengas instalado dotnet corremos las migraciones para actualizar la base de datos:
 ```bash
-    dotnet tool install --global dotnet-ef
+dotnet ef database update
 ```
-
-3. Ejecuta la aplicación
+6. Ejecuta la aplicación
 ```bash
-    dotnet run
+dotnet run
 ```
-4. La app estará disponible en:
+7. La app estará disponible en:
     https://localhost:7065
-5. Y la documentación Swagger en:
+8. Y la documentación Swagger en:
     https://localhost:7065/swagger
 
 📌 Notas Finales
