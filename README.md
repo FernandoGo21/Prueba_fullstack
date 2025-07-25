@@ -43,35 +43,41 @@ README.md <-- Este archivo
 ### 1️⃣ Configurar base de datos
 
 1.  Clona el repositorio
-        git clone https://github.com/FernandoGo21/progressa_test.git
-        cd .\progressa_test\
+```bash
+    git clone https://github.com/FernandoGo21/progressa_test.git
+    cd .\progressa_test\
+```
 2.  Crea una base de datos llamada `GodoyTestDb`:
-        ```sql
-        CREATE DATABASE GodoyTestDb;
-        ```
+```sql
+    CREATE DATABASE GodoyTestDb;
+```
 3.  Abre el archivo appsettings.json y ajusta la cadena de conexión
-        ```c#
-            "ConnectionStrings": {
-                "DefaultConnection": "Server=localhost;Database=GodoyTestDb;User Id=sa;Password=YourStrong!Passw0rd;"
-            }
-        ```
+```c#
+    "ConnectionStrings": {
+        "DefaultConnection": "Server=localhost;Database=GodoyTestDb;User Id=sa;Password=YourStrong!Passw0rd;"
+    }
+```
 4.  Ejecuta las migraciones de Entity Framework para crear automáticamente la base de datos y sus tablas
-    ```bash
-        cd GodoyTest
-        Nota: Si no tienes instalado dotnet-ef, puedes agregarlo con:
-           dotnet tool install --global dotnet-ef
-        dotnet ef database update
-    ```
+```bash
+    cd GodoyTest
+```
+-   Nota: Si no tienes instalado dotnet-ef, puedes agregarlo con:
+```bash
+    dotnet tool install --global dotnet-ef
+```
+```bash
+    dotnet ef database update
+```
 3. Ejecuta la aplicación
-    ```bash
-        dotnet run
-    ```
+```bash
+    dotnet run
+```
 4. La app estará disponible en:
     https://localhost:7065
 5. Y la documentación Swagger en:
     https://localhost:7065/swagger
 
 📌 Notas Finales
-El frontend fue compilado y embebido en el backend en wwwroot.
+El frontend fue compilado y embebido en el backend en wwwroot, sin embargo el codigo del frontend se encuentra en la carpeta de front-app
    
 
