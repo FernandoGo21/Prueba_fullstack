@@ -56,11 +56,13 @@ README.md <-- Este archivo
     ```bash
         cd GodoyTest
         Nota: Si no tienes instalado dotnet-ef, puedes agregarlo con:
-            dotnet tool install --global dotnet-ef
-        dotnet ef database update
+-           dotnet tool install --global dotnet-ef
+-        dotnet ef database update
     ```
 3. Ejecuta la aplicación
-    dotnet run
+    ```bash
+-        dotnet run
+    ```
 4. La app estará disponible en:
     https://localhost:7065
 5. Y la documentación Swagger en:
